@@ -1,10 +1,9 @@
-import { Flex } from '@chakra-ui/react';
-
+import NavigationHeader from '@/components/common/navigation-header/navigation-header';
 import Page from '@/components/common/page/page';
 
 const Homepage = () => (
   <Page title="Homepage">
-    <Flex>Hello World</Flex>
+    <NavigationHeader />
   </Page>
 );
 
