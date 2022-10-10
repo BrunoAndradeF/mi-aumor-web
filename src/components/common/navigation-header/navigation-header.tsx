@@ -7,7 +7,7 @@ import { FaHeart } from 'react-icons/fa';
 import { RiInstagramFill } from 'react-icons/ri';
 
 import AdotameLogo from '@/components/icons/AdotameLogo';
-import { externalUrls } from '@/routes/constants';
+import { externalUrls, internalUrls } from '@/routes/constants';
 
 import styles from './navigation-header.module.scss';
 
@@ -17,8 +17,13 @@ const NavigationHeader: FC = () => {
   return (
     <Flex height="4rem" shadow="lg" align="center" justify="center">
       <Stack width={{ base: 'auto', md: '40%' }} justify="space-between" spacing={1} direction="row">
-        <NextLink href={externalUrls.adotame.instagram} passHref>
-          <Link display="flex">
+        <NextLink href={internalUrls.base} passHref>
+          <Link
+            display="flex"
+            _hover={{
+              textDecoration: 'none',
+            }}
+          >
             <AdotameLogo width={40} height={28} hasName responsive layout="fixed" />
           </Link>
         </NextLink>
@@ -44,8 +49,8 @@ const NavigationHeader: FC = () => {
           </NextLink>
         </Stack>
 
-        <NextLink href="#" passHref>
-          <Link isExternal variant="outline" outline="none" display="flex" gap="0.25rem" alignItems="center">
+        <NextLink href={internalUrls.doacao} passHref>
+          <Link variant="outline" outline="none" display="flex" gap="0.25rem" alignItems="center">
             <FaHeart color="var(--chakra-colors-red-500)" />
             Doação
           </Link>

@@ -10,7 +10,5 @@ export const theme = extendTheme({
   colors: {
     primary: { light: '#CDF8F9' },
   },
-  components: {
-    Link,
-  },
+  components: { Link },
 });
