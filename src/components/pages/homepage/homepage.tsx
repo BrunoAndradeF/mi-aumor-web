@@ -1,5 +1,5 @@
 import { ChevronRightIcon } from '@chakra-ui/icons';
-import { Button, Flex, Heading, Link, Stack, Text, useColorMode } from '@chakra-ui/react';
+import { Button, Flex, Heading, Link, Show, Stack, Text, useColorMode } from '@chakra-ui/react';
 import { useToast } from '@chakra-ui/react';
 import Image from 'next/image';
 import NextLink from 'next/link';
@@ -72,14 +72,14 @@ const Homepage: FC = () => {
             </Stack>
           </Flex>
 
-          <Flex display={{ base: 'none', lg: 'flex' }}>
+          <Show above="lg">
             <Image
               src="/assets/images/animalHumanLove.png"
               width={800}
               height={533}
               alt="Man loving a cat and a woman loving a dog"
             />
-          </Flex>
+          </Show>
         </Flex>
       </BaseIndexPage>
     </Page>
