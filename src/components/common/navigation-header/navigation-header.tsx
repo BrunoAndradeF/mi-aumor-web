@@ -1,10 +1,13 @@
 import { SunIcon, MoonIcon } from '@chakra-ui/icons';
-import { Button, Flex, Icon, IconButton, Link, useColorMode } from '@chakra-ui/react';
+import { Button, Flex, Icon, IconButton, Link, Stack, useColorMode } from '@chakra-ui/react';
 import NextLink from 'next/link';
 import { FC } from 'react';
 import { AiFillGithub } from 'react-icons/ai';
 import { FaHeart } from 'react-icons/fa';
 import { RiInstagramFill } from 'react-icons/ri';
+
+import AdotameLogo from '@/components/icons/AdotameLogo';
+import { externalUrls } from '@/routes/constants';
 
 import styles from './navigation-header.module.scss';
 
@@ -13,28 +16,33 @@ const NavigationHeader: FC = () => {
 
   return (
     <Flex height="4rem" shadow="lg" align="center" justify="center">
-      <Flex width={{ base: 'auto', md: '40%' }} justify="space-between">
-        <IconButton
-          icon={colorMode === 'light' ? <SunIcon /> : <MoonIcon />}
-          aria-label="Color mode switcher"
-          onClick={toggleColorMode}
-        >
-          Switch Mode
-        </IconButton>
+      <Stack width={{ base: 'auto', md: '40%' }} justify="space-between" spacing={1} direction="row">
+        <NextLink href={externalUrls.adotame.instagram} passHref>
+          <Link display="flex">
+            <AdotameLogo width={40} height={28} hasName responsive layout="fixed" />
+          </Link>
+        </NextLink>
 
-        <Flex>
-          <NextLink href="https://github.com/Felipe1496/adotame" passHref>
+        <Stack direction="row" spacing={1}>
+          <IconButton
+            icon={colorMode === 'light' ? <SunIcon /> : <MoonIcon />}
+            aria-label="Color mode switcher"
+            onClick={toggleColorMode}
+          >
+            Switch Mode
+          </IconButton>
+          <NextLink href={externalUrls.adotame.github} passHref>
             <Button as="a" target="_blank" variant="ghost" width="40px">
               <Icon as={AiFillGithub} opacity={0.6} className={styles.github} />
             </Button>
           </NextLink>
 
-          <NextLink href="https://www.instagram.com/adotame_/" passHref>
+          <NextLink href={externalUrls.adotame.instagram} passHref>
             <Button as="a" target="_blank" variant="ghost" width="40px">
               <Icon as={RiInstagramFill} opacity={0.6} className={styles.instagram} />
             </Button>
           </NextLink>
-        </Flex>
+        </Stack>
 
         <NextLink href="#" passHref>
           <Link isExternal variant="outline" outline="none" display="flex" gap="0.25rem" alignItems="center">
@@ -42,7 +50,7 @@ const NavigationHeader: FC = () => {
             Doação
           </Link>
         </NextLink>
-      </Flex>
+      </Stack>
     </Flex>
   );
 };
