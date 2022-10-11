@@ -1,6 +1,10 @@
 export const internalUrls = {
   base: '/',
   doacao: '/doacao',
+  contrato: {
+    politicaPrivacidade: '/contrato/politica-de-privacidade',
+    termosDeUso: '/contrato/termos-de-uso',
+  },
 };
 
 export const externalUrls = {

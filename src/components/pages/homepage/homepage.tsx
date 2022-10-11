@@ -8,9 +8,9 @@ import { FC } from 'react';
 
 import BaseIndexPage from '@/components/common/base-index-page/base-index.page';
 import Page from '@/components/common/page/page';
-import { externalUrls } from '@/routes/constants';
+import { externalUrls, internalUrls } from '@/routes/constants';
 
-const Homepage: FC = () => {
+const HomePage: FC = () => {
   const toast = useToast();
   const router = useRouter();
   const { colorMode } = useColorMode();
@@ -62,7 +62,7 @@ const Homepage: FC = () => {
                   </Button>
                 </NextLink>
 
-                <NextLink href="#" passHref>
+                <NextLink href={`${internalUrls.base}#sobre`} passHref>
                   <Link>
                     Saiba mais
                     <ChevronRightIcon />
@@ -88,4 +88,4 @@ const Homepage: FC = () => {
   );
 };
 
-export default Homepage;
+export default HomePage;

@@ -35,7 +35,7 @@ const Footer: FC = () => (
 
     <Flex justifyContent="center" py="2rem" borderColor="blackAlpha.500" bg="blackAlpha.300">
       <Flex width="80%" justifyContent="space-between" alignItems="center">
-        <Text opacity={0.6}>Adottami | Copyright © 2022 - Todo os Direitos Reservados</Text>
+        <Text opacity={0.6}>Adottami | Copyright © 2022 - Todos Direitos Reservados</Text>
 
         <Breadcrumb
           fontWeight="medium"
@@ -47,11 +47,15 @@ const Footer: FC = () => (
           }
         >
           <BreadcrumbItem>
-            <BreadcrumbLink href="#">Política de privacidade</BreadcrumbLink>
+            <NextLink href={internalUrls.contrato.politicaPrivacidade} passHref>
+              <BreadcrumbLink>Política de privacidade</BreadcrumbLink>
+            </NextLink>
           </BreadcrumbItem>
 
           <BreadcrumbItem>
-            <BreadcrumbLink href="#">Termos de uso</BreadcrumbLink>
+            <NextLink href={internalUrls.contrato.termosDeUso} passHref>
+              <BreadcrumbLink>Termos de uso</BreadcrumbLink>
+            </NextLink>
           </BreadcrumbItem>
         </Breadcrumb>
       </Flex>
