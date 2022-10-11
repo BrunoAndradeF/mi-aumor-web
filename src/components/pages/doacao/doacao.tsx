@@ -1,7 +1,7 @@
 import { ChevronRightIcon } from '@chakra-ui/icons';
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, Divider, Flex, Stack } from '@chakra-ui/react';
 import NextLink from 'next/link';
-import { FC, useContext, useEffect } from 'react';
+import { FC, useEffect } from 'react';
 import { IoMdCloseCircle } from 'react-icons/io';
 import { MdCheckCircle } from 'react-icons/md';
 
@@ -10,10 +10,10 @@ import Page from '@/components/common/page/page';
 import { internalUrls } from '@/routes/constants';
 
 import QRCodeCard from './components/qrcode-card/qrcode-card';
-import useModalDescription from './hooks/useModalDescription';
+import useDoacaoContext from './hooks/useDoacaoContext';
 
 const Doacao: FC = () => {
-  const { setModalDescription } = useModalDescription();
+  const { setModalDescription } = useDoacaoContext();
 
   useEffect(() => {
     const modalDescription = [

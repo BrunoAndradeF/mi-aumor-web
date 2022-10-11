@@ -22,7 +22,7 @@ import {
 import Image, { ImageProps } from 'next/image';
 import { FC } from 'react';
 
-import useModalDescription from '../../hooks/useModalDescription';
+import useDoacaoContext from '../../hooks/useDoacaoContext';
 
 interface Props {
   title: string;
@@ -37,7 +37,7 @@ interface Props {
 const QRCodeCard: FC<Props> = ({ title, src, description, alt, layout, modalTitle }) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const { colorMode } = useColorMode();
-  const { modalDescription } = useModalDescription();
+  const { modalDescription } = useDoacaoContext();
 
   return (
     <Stack justifyContent="center" align="center" borderRadius="md" p={4} border="1px solid" borderColor="gray.200">

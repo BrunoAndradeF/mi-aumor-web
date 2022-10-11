@@ -2,10 +2,10 @@ import { useContext } from 'react';
 
 import { DoacaoContext } from '../contexts/DoacaoContext';
 
-function useModalDescription() {
+function useDoacaoContext() {
   const value = useContext(DoacaoContext);
 
   return value;
 }
 
-export default useModalDescription;
+export default useDoacaoContext;

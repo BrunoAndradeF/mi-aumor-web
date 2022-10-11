@@ -3,6 +3,11 @@ import { extendTheme } from '@chakra-ui/react';
 import { LinkStyles as Link } from './components/link';
 
 export const theme = extendTheme({
+  semanticTokens: {
+    colors: {
+      primary: { default: 'blue.900', _dark: 'white' },
+    },
+  },
   fonts: {
     heading: `'Nunito', sans-serif`,
     body: `'Nunito', sans-serif`,
@@ -10,7 +15,7 @@ export const theme = extendTheme({
   styles: {
     global: (props: any) => ({
       body: {
-        textColor: props.colorMode === 'dark' ? '' : 'blue.900',
+        textColor: 'primary',
       },
     }),
   },
