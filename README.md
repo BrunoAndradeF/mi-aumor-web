@@ -28,6 +28,6 @@ Utiliza [Yarn](https://yarnpkg.com/)
    $ yarn dev
    ```
 
-# Guia de desenvolvimento
+## Guia de desenvolvimento
 
 Aprenda mais sobre as convenções de contribuição em [CONTRIBUTING.md](./CONTRIBUTING.md)
