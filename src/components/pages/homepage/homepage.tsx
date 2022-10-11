@@ -81,6 +81,8 @@ const Homepage: FC = () => {
             />
           </Show>
         </Flex>
+
+        <Flex id="sobre">Sobre</Flex>
       </BaseIndexPage>
     </Page>
   );

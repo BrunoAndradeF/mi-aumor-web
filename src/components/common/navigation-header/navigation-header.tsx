@@ -24,7 +24,7 @@ const NavigationHeader: FC = () => {
               textDecoration: 'none',
             }}
           >
-            <AdotameLogo width={40} height={28} hasName responsive layout="fixed" />
+            <AdotameLogo imageProps={{ width: 40, height: 28, layout: 'fixed' }} hasName responsive />
           </Link>
         </NextLink>
 

@@ -7,8 +7,12 @@ export const theme = extendTheme({
     heading: `'Nunito', sans-serif`,
     body: `'Nunito', sans-serif`,
   },
-  colors: {
-    primary: { light: '#CDF8F9' },
+  styles: {
+    global: (props: any) => ({
+      body: {
+        textColor: props.colorMode === 'dark' ? '' : 'blue.900',
+      },
+    }),
   },
   components: { Link },
 });

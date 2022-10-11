@@ -1,6 +1,6 @@
 {
   "extends": ["next/core-web-vitals", "plugin:@typescript-eslint/recommended", "prettier"],
-  "plugins": ["import-helpers"],
+  "plugins": ["react-hooks", "import", "import-helpers"],
   "rules": {
     "prefer-const": "error",
     "consistent-return": "off",
