@@ -1,8 +1,6 @@
-import { ChakraVariantType } from '@/types/chakra';
-
 export const LinkStyles = {
   variants: {
-    ghost: (props: ChakraVariantType) => ({
+    ghost: (props: any) => ({
       display: 'flex',
       padding: '10px',
       borderRadius: 'md',
@@ -12,7 +10,7 @@ export const LinkStyles = {
         opacity: '0.8',
       },
     }),
-    outline: (props: ChakraVariantType) => ({
+    outline: (props: any) => ({
       border: '1px solid',
       borderColor: props.colorMode === 'dark' ? 'whiteAlpha.200' : 'gray.200',
       bg: props.colorMode === 'dark' ? 'whiteAlpha.200' : 'gray.50',

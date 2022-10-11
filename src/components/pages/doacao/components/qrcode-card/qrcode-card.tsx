@@ -22,7 +22,7 @@ import {
 import Image, { ImageProps } from 'next/image';
 import { FC } from 'react';
 
-import { IModalDescription } from './types';
+import useModalDescription from '../../hooks/useModalDescription';
 
 interface Props {
   title: string;
@@ -31,13 +31,13 @@ interface Props {
   alt: ImageProps['alt'];
   layout?: ImageProps['layout'];
   about?: string;
-  modalDescription: IModalDescription[];
   modalTitle: string;
 }
 
-const QRCodeCard: FC<Props> = ({ title, src, description, alt, layout, modalDescription, modalTitle }) => {
+const QRCodeCard: FC<Props> = ({ title, src, description, alt, layout, modalTitle }) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const { colorMode } = useColorMode();
+  const { modalDescription } = useModalDescription();
 
   return (
     <Stack justifyContent="center" align="center" borderRadius="md" p={4} border="1px solid" borderColor="gray.200">
@@ -65,7 +65,7 @@ const QRCodeCard: FC<Props> = ({ title, src, description, alt, layout, modalDesc
             <ModalCloseButton />
             <ModalBody>
               <List>
-                {modalDescription.map((item) => (
+                {modalDescription?.map((item) => (
                   <ListItem key={item.description}>
                     {item.icon ? <ListIcon as={item.icon} color={item.iconColor} /> : null}
                     {item.description}
