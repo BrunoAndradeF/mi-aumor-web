@@ -1,5 +1,5 @@
 import { ChevronRightIcon } from '@chakra-ui/icons';
-import { Button, Flex, Heading, Link, Show, Stack, StylesProvider, Text, useColorMode } from '@chakra-ui/react';
+import { Button, Flex, Heading, Link, Show, Stack, Text, useColorMode } from '@chakra-ui/react';
 import { useToast } from '@chakra-ui/react';
 import Image from 'next/image';
 import NextLink from 'next/link';

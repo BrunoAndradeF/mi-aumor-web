@@ -1,5 +1,4 @@
-import { Flex, Heading, Link, ListItem, OrderedList, Stack, Text, UnorderedList } from '@chakra-ui/react';
-import NextLink from 'next/link';
+import { Flex, Heading, ListItem, OrderedList, Stack, Text } from '@chakra-ui/react';
 import { FC } from 'react';
 
 import BaseIndexPage from '@/components/common/base-index-page/base-index.page';

@@ -1,4 +1,4 @@
-import { Flex, Heading, Link, List, ListItem, Stack, Text, UnorderedList, useColorMode } from '@chakra-ui/react';
+import { Flex, Heading, Link, ListItem, Stack, Text, UnorderedList } from '@chakra-ui/react';
 import NextLink from 'next/link';
 import { FC } from 'react';
 
