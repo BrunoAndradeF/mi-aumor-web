@@ -2,14 +2,14 @@ import { Box, Breadcrumb, BreadcrumbItem, BreadcrumbLink, Flex, HStack, Text } f
 import NextLink from 'next/link';
 import { FC } from 'react';
 
-import AdotameLogo from '@/components/icons/AdotameLogo';
+import MiAumorLogo from '@/components/icons/MiAumorLogo';
 import { internalUrls } from '@/routes/constants';
 
 const Footer: FC = () => (
   <Box as="footer" mt="auto">
-    <Flex borderY="1px solid" borderColor="blackAlpha.500" bg="blackAlpha.300" justifyContent="center" py="1rem">
+    <Flex borderY="1px solid" borderColor="blackAlpha.400" bg="blackAlpha.200" justifyContent="center" py="1rem">
       <Flex width="80%" justifyContent="space-between" alignItems="center">
-        <AdotameLogo imageProps={{ width: 80, height: 60 }} textProps={{ fontSize: '6xl' }} hasName />
+        <MiAumorLogo imageProps={{ width: 80, height: 60 }} textProps={{ fontSize: '6xl' }} hasName />
 
         <Breadcrumb fontWeight="medium" fontSize="sm" separator="">
           <BreadcrumbItem>
@@ -33,9 +33,9 @@ const Footer: FC = () => (
       </Flex>
     </Flex>
 
-    <Flex justifyContent="center" py="2rem" borderColor="blackAlpha.500" bg="blackAlpha.300">
+    <Flex justifyContent="center" py="2rem" borderColor="blackAlpha.400" bg="blackAlpha.200">
       <Flex width="80%" justifyContent="space-between" alignItems="center">
-        <Text opacity={0.6}>Adottami | Copyright © 2022 - Todos Direitos Reservados</Text>
+        <Text opacity={0.6}>MiAumor | Copyright © 2022 - Todos Direitos Reservados</Text>
 
         <Breadcrumb
           fontWeight="medium"

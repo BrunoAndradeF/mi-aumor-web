@@ -1,5 +1,5 @@
 import { ChevronRightIcon } from '@chakra-ui/icons';
-import { Button, Flex, Heading, Link, Show, Stack, Text, useColorMode } from '@chakra-ui/react';
+import { Button, Flex, Heading, Link, Show, Stack, StylesProvider, Text, useColorMode } from '@chakra-ui/react';
 import { useToast } from '@chakra-ui/react';
 import Image from 'next/image';
 import NextLink from 'next/link';
@@ -8,7 +8,10 @@ import { FC } from 'react';
 
 import BaseIndexPage from '@/components/common/base-index-page/base-index.page';
 import Page from '@/components/common/page/page';
+import MiAumorLogo from '@/components/icons/MiAumorLogo';
 import { externalUrls, internalUrls } from '@/routes/constants';
+
+import styles from './homepage.module.scss';
 
 const HomePage: FC = () => {
   const toast = useToast();
@@ -26,7 +29,7 @@ const HomePage: FC = () => {
       duration: toastAndRedirectDelayTime,
       isClosable: true,
     });
-    setTimeout(() => router.push(externalUrls.adotame.instagram), toastAndRedirectDelayTime);
+    setTimeout(() => router.push(externalUrls.miaumor.instagram), toastAndRedirectDelayTime);
   };
 
   return (
@@ -82,7 +85,27 @@ const HomePage: FC = () => {
           </Show>
         </Flex>
 
-        <Flex id="sobre">Sobre</Flex>
+        <Flex id="sobre" height="100vh" justifyContent="center" alignItems="center">
+          <Stack width="70%" alignItems="center" direction="row" spacing="10%">
+            <Show above="lg">
+              <Image
+                src="/assets/images/catAndDogIlustration.jpg"
+                width={1000}
+                height={1000}
+                alt="Cat and dog loving each other"
+                className={styles.catAndDogIlustration}
+              />
+            </Show>
+            <Stack alignItems="center">
+              <MiAumorLogo imageProps={{ width: 40, height: 28, layout: 'fixed' }} hasName responsive />
+              <Text fontSize="xl" textAlign={{ base: 'center', lg: 'start' }}>
+                É um projeto social voltado para a causa animal, pensado e criado por pessoas apaixonadas por nossos
+                animaizinhos de 4 patas. Nosso objetivo é melhorar a qualidade de vida de animais errantes e ajudá-los a
+                encontrar um novo lar.
+              </Text>
+            </Stack>
+          </Stack>
+        </Flex>
       </BaseIndexPage>
     </Page>
   );

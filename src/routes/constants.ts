@@ -8,7 +8,7 @@ export const internalUrls = {
 };
 
 export const externalUrls = {
-  adotame: {
+  miaumor: {
     instagram: 'https://www.instagram.com/adotame_/',
     github: 'https://github.com/Felipe1496/adotame',
   },
