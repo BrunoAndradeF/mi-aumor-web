@@ -9,7 +9,7 @@ export const internalUrls = {
 
 export const externalUrls = {
   miaumor: {
-    instagram: 'https://www.instagram.com/adotame_/',
-    github: 'https://github.com/Felipe1496/adotame',
+    instagram: 'https://www.instagram.com/mi.aumor/',
+    github: 'https://github.com/Felipe1496/mi-aumor-web',
   },
 };
