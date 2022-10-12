@@ -6,7 +6,7 @@ import { AiFillGithub } from 'react-icons/ai';
 import { FaHeart } from 'react-icons/fa';
 import { RiInstagramFill } from 'react-icons/ri';
 
-import AdotameLogo from '@/components/icons/AdotameLogo';
+import MiAumorLogo from '@/components/icons/MiAumorLogo';
 import { externalUrls, internalUrls } from '@/routes/constants';
 
 import styles from './navigation-header.module.scss';
@@ -24,7 +24,7 @@ const NavigationHeader: FC = () => {
               textDecoration: 'none',
             }}
           >
-            <AdotameLogo imageProps={{ width: 40, height: 28, layout: 'fixed' }} hasName responsive />
+            <MiAumorLogo imageProps={{ width: 40, height: 28, layout: 'fixed' }} hasName responsive />
           </Link>
         </NextLink>
 
@@ -36,13 +36,13 @@ const NavigationHeader: FC = () => {
           >
             Switch Mode
           </IconButton>
-          <NextLink href={externalUrls.adotame.github} passHref>
+          <NextLink href={externalUrls.miaumor.github} passHref>
             <Button as="a" target="_blank" variant="ghost" width="40px">
               <Icon as={AiFillGithub} opacity={0.6} className={styles.github} />
             </Button>
           </NextLink>
 
-          <NextLink href={externalUrls.adotame.instagram} passHref>
+          <NextLink href={externalUrls.miaumor.instagram} passHref>
             <Button as="a" target="_blank" variant="ghost" width="40px">
               <Icon as={RiInstagramFill} opacity={0.6} className={styles.instagram} />
             </Button>

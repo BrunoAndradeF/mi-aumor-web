@@ -1,4 +1,4 @@
-import { Flex, Heading, Link, List, ListItem, Stack, Text, UnorderedList, useColorMode } from '@chakra-ui/react';
+import { Flex, Heading, Link, ListItem, Stack, Text, UnorderedList } from '@chakra-ui/react';
 import NextLink from 'next/link';
 import { FC } from 'react';
 
@@ -18,8 +18,8 @@ const PoliticaPrivacidade: FC = () => (
         <Flex justifyContent="center" my="4rem">
           <Stack spacing={4} width="70%" direction="column">
             <Text>
-              A sua privacidade é importante para nós. É política do Adotame respeitar a sua privacidade em relação a
-              qualquer informação sua que possamos coletar no site Adotame, e outros sites que possuímos e operamos.
+              A sua privacidade é importante para nós. É política do Mi Aumor respeitar a sua privacidade em relação a
+              qualquer informação sua que possamos coletar no site Mi Aumor, e outros sites que possuímos e operamos.
             </Text>
 
             <Text>
@@ -63,8 +63,8 @@ const PoliticaPrivacidade: FC = () => (
             <Text fontWeight="semibold">Compromisso do Usuário</Text>
 
             <Text>
-              O usuário se compromete a fazer uso adequado dos conteúdos e da informação que o Adotame oferece no site e
-              com caráter enunciativo, mas não limitativo:
+              O usuário se compromete a fazer uso adequado dos conteúdos e da informação que o Mi Aumor oferece no site
+              e com caráter enunciativo, mas não limitativo:
             </Text>
 
             <UnorderedList spacing={2}>
@@ -79,7 +79,7 @@ const PoliticaPrivacidade: FC = () => (
               </ListItem>
 
               <ListItem>
-                C) Não causar danos aos sistemas físicos (hardwares) e lógicos (softwares) do Adotame, de seus
+                C) Não causar danos aos sistemas físicos (hardwares) e lógicos (softwares) do Mi Aumor, de seus
                 fornecedores ou terceiros, para introduzir ou disseminar vírus informáticos ou quaisquer outros sistemas
                 de hardware ou software que sejam capazes de causar danos anteriormente mencionados.
               </ListItem>

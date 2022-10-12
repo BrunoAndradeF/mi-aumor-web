@@ -1,5 +1,4 @@
-import { Flex, Heading, Link, ListItem, OrderedList, Stack, Text, UnorderedList } from '@chakra-ui/react';
-import NextLink from 'next/link';
+import { Flex, Heading, ListItem, OrderedList, Stack, Text } from '@chakra-ui/react';
 import { FC } from 'react';
 
 import BaseIndexPage from '@/components/common/base-index-page/base-index.page';
@@ -22,7 +21,7 @@ const TermosUso: FC = () => (
             </Heading>
 
             <Text>
-              Ao acessar ao site Adotame, concorda em cumprir estes termos de serviço, todas as leis e regulamentos
+              Ao acessar ao site Mi Aumor, concorda em cumprir estes termos de serviço, todas as leis e regulamentos
               aplicáveis ​​e concorda que é responsável pelo cumprimento de todas as leis locais aplicáveis. Se você não
               concordar com algum desses termos, está proibido de usar ou acessar este site. Os materiais contidos neste
               site são protegidos pelas leis de direitos autorais e marcas comerciais aplicáveis.
@@ -34,7 +33,7 @@ const TermosUso: FC = () => (
 
             <Text>
               É concedida permissão para baixar temporariamente uma cópia dos materiais (informações ou software) no
-              site Adotame , apenas para visualização transitória pessoal e não comercial. Esta é a concessão de uma
+              site Mi Aumor , apenas para visualização transitória pessoal e não comercial. Esta é a concessão de uma
               licença, não uma transferência de título e, sob esta licença, você não pode:
             </Text>
 
@@ -47,7 +46,7 @@ const TermosUso: FC = () => (
               </ListItem>
 
               <ListItem>
-                tentar descompilar ou fazer engenharia reversa de qualquer software contido no site Adotame;
+                tentar descompilar ou fazer engenharia reversa de qualquer software contido no site Mi Aumor;
               </ListItem>
 
               <ListItem>remover quaisquer direitos autorais ou outras notações de propriedade dos materiais;</ListItem>
@@ -59,7 +58,7 @@ const TermosUso: FC = () => (
 
             <Text>
               Esta licença será automaticamente rescindida se você violar alguma dessas restrições e poderá ser
-              rescindida por Adotame a qualquer momento. Ao encerrar a visualização desses materiais ou após o término
+              rescindida por Mi Aumor a qualquer momento. Ao encerrar a visualização desses materiais ou após o término
               desta licença, você deve apagar todos os materiais baixados em sua posse, seja em formato eletrónico ou
               impresso.
             </Text>
@@ -70,14 +69,14 @@ const TermosUso: FC = () => (
 
             <OrderedList spacing={2}>
               <ListItem>
-                Os materiais no site da Adotame são fornecidos como estão. Adotame não oferece garantias, expressas ou
+                Os materiais no site da Mi Aumor são fornecidos como estão. Mi Aumor não oferece garantias, expressas ou
                 implícitas, e, por este meio, isenta e nega todas as outras garantias, incluindo, sem limitação,
                 garantias implícitas ou condições de comercialização, adequação a um fim específico ou não violação de
                 propriedade intelectual ou outra violação de direitos.{' '}
               </ListItem>
 
               <ListItem>
-                Além disso, o Adotame não garante ou faz qualquer representação relativa à precisão, aos resultados
+                Além disso, o Mi Aumor não garante ou faz qualquer representação relativa à precisão, aos resultados
                 prováveis ​​ou à confiabilidade do uso dos materiais em seu site ou de outra forma relacionado a esses
                 materiais ou em sites vinculados a este site.
               </ListItem>
@@ -88,10 +87,10 @@ const TermosUso: FC = () => (
             </Heading>
 
             <Text>
-              Em nenhum caso o Adotame ou seus fornecedores serão responsáveis ​​por quaisquer danos (incluindo, sem
+              Em nenhum caso o Mi Aumor ou seus fornecedores serão responsáveis ​​por quaisquer danos (incluindo, sem
               limitação, danos por perda de dados ou lucro ou devido a interrupção dos negócios) decorrentes do uso ou
-              da incapacidade de usar os materiais em Adotame, mesmo que Adotame ou um representante autorizado da
-              Adotame tenha sido notificado oralmente ou por escrito da possibilidade de tais danos. Como algumas
+              da incapacidade de usar os materiais em Mi Aumor, mesmo que Mi Aumor ou um representante autorizado da Mi
+              Aumor tenha sido notificado oralmente ou por escrito da possibilidade de tais danos. Como algumas
               jurisdições não permitem limitações em garantias implícitas, ou limitações de responsabilidade por danos
               conseqüentes ou incidentais, essas limitações podem não se aplicar a você.
             </Text>
@@ -101,9 +100,9 @@ const TermosUso: FC = () => (
             </Heading>
 
             <Text>
-              Os materiais exibidos no site da Adotame podem incluir erros técnicos, tipográficos ou fotográficos.
-              Adotame não garante que qualquer material em seu site seja preciso, completo ou atual. Adotame pode fazer
-              alterações nos materiais contidos em seu site a qualquer momento, sem aviso prévio. No entanto, Adotame
+              Os materiais exibidos no site da Mi Aumor podem incluir erros técnicos, tipográficos ou fotográficos. Mi
+              Aumor não garante que qualquer material em seu site seja preciso, completo ou atual. Mi Aumor pode fazer
+              alterações nos materiais contidos em seu site a qualquer momento, sem aviso prévio. No entanto, Mi Aumor
               não se compromete a atualizar os materiais.
             </Text>
 
@@ -112,8 +111,8 @@ const TermosUso: FC = () => (
             </Heading>
 
             <Text>
-              O Adotame não analisou todos os sites vinculados ao seu site e não é responsável pelo conteúdo de nenhum
-              site vinculado. A inclusão de qualquer link não implica endosso por Adotame do site. O uso de qualquer
+              O Mi Aumor não analisou todos os sites vinculados ao seu site e não é responsável pelo conteúdo de nenhum
+              site vinculado. A inclusão de qualquer link não implica endosso por Mi Aumor do site. O uso de qualquer
               site vinculado é por conta e risco do usuário.
             </Text>
 
@@ -122,7 +121,7 @@ const TermosUso: FC = () => (
             </Heading>
 
             <Text>
-              O Adotame pode revisar estes termos de serviço do site a qualquer momento, sem aviso prévio. Ao usar este
+              O Mi Aumor pode revisar estes termos de serviço do site a qualquer momento, sem aviso prévio. Ao usar este
               site, você concorda em ficar vinculado à versão atual desses termos de serviço.
             </Text>
 
@@ -131,7 +130,7 @@ const TermosUso: FC = () => (
             </Heading>
 
             <Text>
-              O Adotame pode revisar estes termos de serviço do site a qualquer momento, sem aviso prévio. Ao usar este
+              O Mi Aumor pode revisar estes termos de serviço do site a qualquer momento, sem aviso prévio. Ao usar este
               site, você concorda em ficar vinculado à versão atual desses termos de serviço.
             </Text>
 
@@ -140,7 +139,7 @@ const TermosUso: FC = () => (
             </Heading>
 
             <Text>
-              Estes termos e condições são regidos e interpretados de acordo com as leis do Adotame e você se submete
+              Estes termos e condições são regidos e interpretados de acordo com as leis do Mi Aumor e você se submete
               irrevogavelmente à jurisdição exclusiva dos tribunais naquele estado ou localidade.
             </Text>
           </Stack>

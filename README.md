@@ -1,4 +1,4 @@
-<h1 align="center">Adotame</h1>
+<h1 align="center">Mi Aumor</h1>
 
 <img src="/docs/images/thumb.png" alt="Application image" />
 
@@ -19,8 +19,8 @@ Utiliza [Yarn](https://yarnpkg.com/)
 
 1. Clone o repositório e instale as dependências:
    ```bash
-   $ git clone git@github.com:Felipe1496/adotame.git
-   $ cd adotame
+   $ git clone git@github.com:Felipe1496/mi-aumor-web.git
+   $ cd mi-aumor-web
    $ yarn install
    ```
 2. Rode o projeto em desenvolvimento localmente:

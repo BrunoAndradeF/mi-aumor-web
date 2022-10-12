@@ -1,2 +1,2 @@
-export const ADOTAME_LOGO_ALT = 'Adotame logo';
-export const ADOTAME_LOGO_PATH = '/assets/icons/adotame-logo.png';
+export const MIAUMOR_LOGO_ALT = 'MiAumor logo';
+export const MIAUMOR_LOGO_PATH = '/assets/icons/miaumor-logo.png';
