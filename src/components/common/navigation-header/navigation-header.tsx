@@ -24,7 +24,7 @@ const NavigationHeader: FC = () => {
               textDecoration: 'none',
             }}
           >
-            <MiAumorLogo imageProps={{ width: 40, height: 28, layout: 'fixed' }} hasName responsive />
+            <MiAumorLogo imageProps={{ width: 40, height: 28, layout: 'fixed' }} hasImage hasName responsive />
           </Link>
         </NextLink>
 

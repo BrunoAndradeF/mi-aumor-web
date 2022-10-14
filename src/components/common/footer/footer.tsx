@@ -8,7 +8,7 @@ import { internalUrls } from '@/routes/constants';
 const Footer: FC = () => (
   <Box as="footer" mt="auto">
     <Flex borderY="1px solid" borderColor="blackAlpha.400" bg="blackAlpha.200" justifyContent="center" py="1rem">
-      <Flex width="80%" justifyContent="space-between" alignItems="center">
+      <Flex width="80%" justifyContent={'space-between'} alignItems="center" direction={{ base: 'column', md: 'row' }}>
         <MiAumorLogo imageProps={{ width: 80, height: 60 }} textProps={{ fontSize: '6xl' }} hasName />
 
         <Breadcrumb fontWeight="medium" fontSize="sm" separator="">
