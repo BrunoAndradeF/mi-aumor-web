@@ -61,7 +61,7 @@ const Doacao: FC = () => {
               <Divider orientation="horizontal" />
             </Stack>
 
-            <Flex justifyContent="center" mt="8rem">
+            <Flex justifyContent="center" height="100%" alignItems="center">
               <QRCodeCard
                 src="/assets/images/qrcode.png"
                 title="QR Code"
