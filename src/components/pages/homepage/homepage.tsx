@@ -97,7 +97,7 @@ const HomePage: FC = () => {
               />
             </Show>
             <Stack alignItems="center">
-              <MiAumorLogo imageProps={{ width: 40, height: 28, layout: 'fixed' }} hasName responsive />
+              <MiAumorLogo imageProps={{ width: 40, height: 28, layout: 'fixed' }} hasImage hasName responsive />
               <Text fontSize="xl" textAlign={{ base: 'center', lg: 'start' }}>
                 É um projeto social voltado para a causa animal, pensado e criado por pessoas apaixonadas por nossos
                 animaizinhos de 4 patas. Nosso objetivo é melhorar a qualidade de vida de animais errantes e ajudá-los a
