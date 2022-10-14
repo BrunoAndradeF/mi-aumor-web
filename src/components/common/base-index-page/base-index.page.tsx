@@ -13,6 +13,7 @@ const BaseIndexPage: FC<Props> = ({ children }) => (
     <NavigationHeader />
 
     {children}
+
     <Footer />
   </>
 );
