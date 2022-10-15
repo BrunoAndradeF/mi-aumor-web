@@ -6,7 +6,6 @@ export const DoacaoContext = createContext({} as IDoacaoContext);
 
 export const DoacaoContextProvider = (props: IDoacaoContextProvider) => {
   const [modalDescription, setModalDescription] = useState<IModalDescription[]>([]);
-  console.log('oi');
 
   const value = useMemo(
     () => ({
